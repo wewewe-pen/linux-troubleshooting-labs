@@ -1,0 +1,11 @@
+# Локальные/временные файлы
+*.log
+*.tmp
+*.swp
+*~
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
