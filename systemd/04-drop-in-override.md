@@ -48,10 +48,4 @@ Administrator drop-in переопределял `Restart=`.
 sudo systemctl daemon-reload
 ```
 
-## Вывод
-
-```text
-vendor unit + drop-in override = effective configuration
-```
-
 Drop-in применяется к unit автоматически; отдельно `enable` для него не нужен.

@@ -31,9 +31,3 @@ Sticky bit  → ограничивает удаление/rename чужих dire
 ## Отдельный нюанс
 
 Sticky bit не запрещает изменение содержимого чужого файла, если permissions самого файла разрешают запись. Он работает на уровне удаления/rename entries в directory.
-
-## Вывод
-
-- SGID отвечает за group ownership inheritance;
-- Default ACL — за наследуемые дополнительные permissions;
-- Sticky bit — за контроль удаления/rename в shared directory.

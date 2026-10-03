@@ -16,8 +16,6 @@ STATE S
 PPID 1
 ```
 
-Само состояние `S` ошибкой не было: process просто спал между проверками.
-
 ## Расследование
 
 Проверил current working directory:
@@ -57,10 +55,3 @@ Process был запущен с `cwd=/tmp`, а application рассчитыва
 ```text
 CONFIG OK cwd=/tmp
 ```
-
-## Вывод
-
-- process существует ≠ application работает правильно;
-- `S` ≠ application healthy;
-- `relative path + CWD = фактический path`;
-- при `file not found` полезно проверять `/proc/<PID>/cwd`.

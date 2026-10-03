@@ -36,11 +36,4 @@ sudo systemctl daemon-reload
 sudo systemctl start <service>
 ```
 
-## Вывод
-
-```text
-After=/Before=   → порядок
-Requires=/Wants= → dependency
-```
-
-И эти directives относятся к `[Unit]`.
+И все заработало

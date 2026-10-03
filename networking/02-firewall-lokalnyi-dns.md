@@ -53,9 +53,3 @@ iifname "lo" accept
 ```
 
 После применения ruleset DNS снова заработал.
-
-## Вывод
-
-- firewall может ломать не только remote traffic, но и `local process → lo → local service`;
-- пустой `tcpdump` ничего не доказывает, если выбран неправильный interface;
-- сначала нужно понять, где реально проходит пакет, и только потом смотреть capture.

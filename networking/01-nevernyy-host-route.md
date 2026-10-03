@@ -43,8 +43,6 @@ sudo tcpdump -i ens33 -n 'arp or icmp'
 
 Были ARP Requests к `192.168.254.253`, но не было ни одного ARP Reply.
 
-## Где ещё ошибся
-
 При исправлении сначала попытался удалить:
 
 ```bash
@@ -69,10 +67,3 @@ ping -c 3 1.1.1.1
 ```
 
 Результат: `3 transmitted, 3 received, 0% packet loss`.
-
-## Вывод
-
-- destination и gateway — разные вещи;
-- `ip route` показывает routing decision;
-- `ip neigh` помогает понять, разрешился ли next hop в MAC;
-- `FAILED` в neighbour table не означает «route выключен».

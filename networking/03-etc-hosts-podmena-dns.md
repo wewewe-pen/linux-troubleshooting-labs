@@ -61,10 +61,3 @@ getent hosts example.com
 dig +short example.com
 curl -4 -sS https://example.com >/dev/null && echo OK
 ```
-
-## Вывод
-
-- `getent` показывает результат системного Name Resolution;
-- `dig` проверяет DNS напрямую;
-- `/etc/hosts` — локальная таблица `hostname ↔ IP`;
-- неправильная запись в `/etc/hosts` может выглядеть как DNS-проблема, хотя DNS вообще ни при чём.

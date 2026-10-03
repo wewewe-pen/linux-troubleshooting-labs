@@ -11,7 +11,7 @@ curl http://127.0.0.1:8080
 Ответ:
 
 ```text
-NETWORK BOSS LAB SERVICE OK
+LAB SERVICE OK
 ```
 
 Но запрос к LAN IP:
@@ -74,10 +74,3 @@ Firewall здесь не мог исправить binding: разрешающи
 Для remote access также был разрешён TCP/8080 в INPUT.
 
 Финальная проверка с другой машины прошла успешно.
-
-## Вывод
-
-- `127.0.0.1:PORT` — только loopback;
-- `0.0.0.0:PORT` — все подходящие local IPv4 addresses;
-- `firewall ACCEPT` и наличие listener — разные вещи;
-- `Connection refused` не стоит автоматически лечить firewall rules.

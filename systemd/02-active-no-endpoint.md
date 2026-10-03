@@ -61,10 +61,3 @@ SYN мог выйти через OUTPUT, но INPUT policy drop блокиров
 ```bash
 sudo nft add rule inet firewall input iifname "lo" accept
 ```
-
-## Вывод
-
-- `service active` ≠ endpoint доступен;
-- `LISTEN` ≠ client обязательно сможет подключиться;
-- loopback traffic всё равно проходит через firewall hooks;
-- один incident может иметь несколько независимых причин, поэтому после каждого fix нужна повторная проверка исходного симптома.

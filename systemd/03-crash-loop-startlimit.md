@@ -47,14 +47,3 @@ sudo systemctl daemon-reload
 sudo systemctl reset-failed sasha-prod-d.service
 sudo systemctl start sasha-prod-d.service
 ```
-
-## Вывод
-
-```text
-application error → root cause
-Restart=...       → recovery policy
-StartLimit        → защита от crash loop
-reset-failed      → очистка failed/rate-limit state
-```
-
-`reset-failed` не исправляет причину и сам по себе не запускает service.
